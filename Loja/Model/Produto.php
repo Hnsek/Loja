@@ -18,7 +18,7 @@ require('../conexao.php');
             $query->bindParam(":quantidade", $quantidade, PDO::PARAM_INT);
             $query->bindParam(":ncm", $ncm, PDO::PARAM_STR);
 
-            $query.execute();
+            $query->execute();
             
             $conexao = null;
             

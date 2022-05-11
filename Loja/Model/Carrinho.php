@@ -14,7 +14,7 @@ require('../conexao.php');
             $query->bindParam(":produto_id", $produto_id, PDO::PARAM_INT);
             $query->bindParam(":categoria_id", $categoria_id, PDO::PARAM_INT);
 
-            $query.execute();
+            $query->execute();
             
             $conexao = null;
             

@@ -15,7 +15,7 @@ require('../conexao.php');
             $query->bindParam(":cpf", $cpf, PDO::PARAM_STR);
             $query->bindParam(":senha", $senha, PDO::PARAM_STR);
 
-            $query.execute();
+            $query->execute();
             
             $conexao = null;
             
